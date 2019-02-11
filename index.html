@@ -1,15 +1,60 @@
 <html>
-
-	<head>
-		
-<title>My First Web Page</title>
-	
-</head>
-	
-<body>
-		
-<h1>This is my first web page. Oh, I'm excited!!!!</h1>
-	
-</body>
-
+	<head>	
+		<title>My First Web Page</title>
+		<link rel="stylesheet" href="style.css"/>
+		<script language="javascript" type="text/javascript">
+			function submitClick(){
+				var name=document.getElementById("name");
+				if(name.value=='')
+					alert("Full Name is missing");
+				else
+					alert(name.value);
+			}
+		</script>
+	</head>
+	<body>
+		<p align="center">
+			<img src="10000coders-logo.png"></img>
+		</p><br />
+		<h3 align="center">Welcome to 10000 Coders Programming Challenge</h3><br />
+		<div align="justify">
+		Hello guys,<br />
+		Welcome to the HTML?CSS programming exercise by 10000 Coders. This will test your basics in HTML and CSS. You need to recreate the document you are reading now using HTML/CSS. <u>Make sure that the page looks exactly like this document.</u>
+		</div>
+		<h3>General Instructions</h3>
+		<ol>
+			<li>There will be a 15px margin between all elements in the form shown below</li>
+			<li>Use external CSS for styling</li>
+			<li>This exercise will cover the following constructs of HTML</li>
+			<ul type="disc">
+				<li>HTML Form</li>
+				<li>Text inputs with placeholders</li>
+				<li>Text area</li>
+				<li>Password input</li>
+				<li>Select drop-down box</li>
+				<li>Radio buttons</li>
+				<li>Checkboxes and</li>
+				<li>Buttons</li>
+			</ul>
+		</ol>
+		<h4 align="center">So, let's get started. All the best!</h4>
+		<form>
+		<label>Full Name</label><input id="name" type="text" placeholder="Enter your first name"/><br />
+		<label>Secret Pin</label><input type="password" placeholder="Enter your secret pin"/><br />
+		<label>Gender</label><input type="radio" name="gender" value="male">Male
+							<input type="radio" name="gender" value="female">Female<br />
+		<label>I am expert in</label><input type="checkbox" name="html" value="html">HTML
+									<input type="checkbox" name="css" value="css">CSS<br />
+		<label>My Field of Study is</label>
+		<select>
+			<option value="default" selected>Select your branch uisng this drop-down</option>
+			<option value="cse">Computer Science and Engineering</option>
+			<option value="it">Information Technology</option>
+			<option value="mech">Mechanical Engineering</option>
+			<option value="civil">Civil Engineering</option>
+		</select><br />
+		<label>Tell more about yourself</label>
+		<textarea rows="4" cols="50" placeholder="This is text area. Enter your description."></textarea><br />
+		<Button onclick="submitClick();">Submit Form</Button>
+	</body>
 </html>
