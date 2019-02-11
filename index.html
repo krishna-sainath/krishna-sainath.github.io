@@ -10,6 +10,9 @@
 				else
 					alert(name.value);
 			}
+			function alertGender(radioButton){
+				alert(radioButton.value);
+			}
 		</script>
 	</head>
 	<body>
@@ -41,8 +44,8 @@
 		<form>
 		<label>Full Name</label><input id="name" type="text" placeholder="Enter your first name"/><br />
 		<label>Secret Pin</label><input type="password" placeholder="Enter your secret pin"/><br />
-		<label>Gender</label><input type="radio" name="gender" value="male">Male
-							<input type="radio" name="gender" value="female">Female<br />
+		<label>Gender</label><input type="radio" name="gender" value="male" onclick="alertGender(this);">Male
+							<input type="radio" name="gender" value="female" onclick="alertGender(this);">Female<br />
 		<label>I am expert in</label><input type="checkbox" name="html" value="html">HTML
 									<input type="checkbox" name="css" value="css">CSS<br />
 		<label>My Field of Study is</label>
