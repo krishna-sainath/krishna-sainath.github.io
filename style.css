@@ -19,6 +19,6 @@ Button{
 }
 
 body{
-	padding-left: 300px;
-	padding-right: 300px;
+	max-width: 700px;
+  	margin: auto;
 }
